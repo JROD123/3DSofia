@@ -1,71 +1,30 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <title>Sofia</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="sidebarNavigation.css"> 
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-  <script  src="sidebarNavigation.js"></script>
-  <script  src="particles.js"></script>
+<html>
+  <head>
+    <title>3DSofia</title>
 
-</head>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-<body id="hero">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light sidebarNavigation" data-sidebarClass="navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <div id="wrapper">
-                        <div class="circle icon">
-                            <span class="line top"></span>
-                            <span class="line middle"></span>
-                            <span class="line bottom"></span>
-                        </div>
-                        </div>
-                        </span>                        
-            </button>
-            <a class="navbar-brand" href="#">Sofia</a>
-            <p class="uxui">The Frenchton</p>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ml-auto">
-                <li><div class="current-home">Home</div></li>
-                <li><a class="nav-item nav-link" href="about.html">About</a></li>
-                <li><a class="nav-item nav-link" href="projects.html">Projects</a></li>
-                <li><a class="nav-item nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    
+  </head>
+  
 
-    <!--3D-->
-  <div id="particles-js">
-    
-  </div>
+
+  <body id="hero">
+
+    <div id="particles-js"></div>
+
     <canvas id="myCanvas"></canvas>
-    <script  src="sidebarNavigation.js"></script>
     <script  src="particles.js"></script>
     <script src="three.js"></script>
     <script src="OrbitControls.js"></script>
     <script src="GLTFLoader.js"></script>
-
    
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <img class="Sofia" src="Sofia.svg"/>
-        </div>
-      </div>
-      
+      <img class="Sofia" src="Sofia.svg"/>
     </div>
-    <!--Particles-->
     
-
     <script>
       var renderer = new THREE.WebGLRenderer({ antialias: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
@@ -169,12 +128,7 @@
         
       }
     </script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script src="sidebarNavigation.js"></script>
-    <script  src="particles.js"></script>
-
-</body>
+<script  src="particles.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
 </html>
